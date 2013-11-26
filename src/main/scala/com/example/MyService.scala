@@ -24,7 +24,7 @@ class MyServiceActor extends Actor with MyService {
 trait MyService extends HttpService {
 
   val myRoute =
-    path("") {
+    path("homeless") {
       get {
         respondWithMediaType(`text/html`) { // XML is marshalled to `text/xml` by default, so we simply override here
           complete {
